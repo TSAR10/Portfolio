@@ -179,6 +179,9 @@ html,body{
 	}
 	.about{
 		position: relative;
+		top:0%;
+		left:0%;
+		bottom: 100%;
 		min-width:100%;
 		background-color: white;
 		min-height:100%;
