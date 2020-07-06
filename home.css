@@ -91,15 +91,78 @@ html,body{
 	background-color: white;
 	top:20%;
 	height:80%;
+	overflow: hidden;
 }
-.about > div{
-	height:35%;
+.heading{
+	height:15%;
 	width:100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: clamp(1.5em,1.5em + 2.5vw,3em);
 	font-family: 'Alegreya', serif;
+}
+.content{
+	width:99%;
+	min-height:85%;
+	height:85%;
+	max-height:85%;
+	display: flex;
+	font-size: clamp(1em,1em + 2vw,1.5em);
+	font-family: 'Open Sans',serif;
+	justify-content: space-around;
+}
+.written
+{
+	min-height:100%;
+	height:100%;
+	width:60%;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+}
+.images{
+	display: flex;
+	min-height:100%;
+	height:100%;
+	width:30%;
+	font-family: 'Alegreya', serif;
+	font-size: clamp(1em,1em + 1.5vw,1.5em);
+	color: white;
+	flex-direction: column;
+	justify-content:space-around;
+}
+.completed , .incomplete{
+	display:flex;
+	height:30%;
+	width:100%;
+	flex-direction: column;
+	justify-content: center;
+}
+.head{
+	width:100%;
+	height:40%;
+	display:flex;
+	border:1px solid midnightblue;
+	background-color: midnightblue;
+}
+.head > div{
+	width:auto;
+	height:100%;
+	margin: auto;
+}
+.logo{
+	width:100%;
+	height:60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:1px solid black;
+}
+.logo > img{
+	height:90%;
+	width:auto;
+	padding: 0% 2% 0% 2%;
 }
 @media screen and (max-width: 800px){
 	body{
@@ -114,8 +177,41 @@ html,body{
 		background-size: 100% 100%; 
 	}
 	.about{
-		top:0%;
+		position: relative;
+		min-width:100%;
+		background-color: white;
+		top:0;
+		min-height:100%;
+		width:100%;
 		height:100%;
+	}
+	.images{
+		flex-direction:row;
+		min-height:20%;
+		height:20%;
+		width:100%;
+	}
+	.incomplete{
+		padding-left:5%;
+	}
+	.content{
+		max-width: 97%;
+		width:100%;
+		height:85%;
+		margin-left: 3%;
+		flex-direction: column;
+		margin-left:1%;
+	}
+	.written{
+		min-height:65%;
+		height:65%;
+		width:100%;
+		display:flex;
+		flex-direction:column;
+		justify-content: space-around;
+	}
+	.head{
+		background-color: midnightblue;
 	}
 	.menubar ul li:nth-child(1){
 		display: block;
@@ -269,5 +365,35 @@ html,body{
 	}
 	.menubar > ul > li > div > span{
 		margin-left: 8%;
+	}
+	.completed , .incomplete{
+		display:flex;
+		height:100%;
+		width:45%;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.head{
+		width:100%;
+		height:40%;
+		display:flex;
+		border:1px solid midnightblue;
+	}	
+	.head > div{
+		width:auto;
+		height:100%;
+		margin: auto;
+	}
+	.logo{
+		width:100%;
+		height:60%;
+		display: flex;
+		justify-content: center;
+		border:1px solid black;
+	}
+	.logo > img{
+		height:100%;
+		width:auto;
+		border-radius: 50%;
 	}
 }
