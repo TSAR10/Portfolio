@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="home.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="home.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap" rel="stylesheet">
+	
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<title>Home Page</title>
 </head>
 <body>
 	<section class="navbar">
-		<input type="checkbox" name="menu" class="check">
+		<input type="checkbox" name="menu" class="check" onclick="zindex()">
 		<div class="hamburger">
 			<div></div>
 		</div>
@@ -77,14 +80,87 @@
 		</div>
 	</section>
 	<section class="projects">
+		<input type="radio" name="button" id="slide1" checked>
+		<input type="radio" name="button" id="slide2">
+		<input type="radio" name="button" id="slide3">
 		<div class="heading"> Projects </div>
 		<hr>
-		<div class="corusal">
-			<label for="slide1"></label>
-			<label for="slide2"></label>
-			<label for="slide3"></label>
-			<div class="inner">
-				
+		<div class="container">
+			<div class="slides">
+				<div class="ptitle">
+					PureCssImages
+				</div>
+				<div class="pabout">
+					I am Uploading daily making images using <b>HTML</b> and <b>CSS</b> sometimes <b>Javascript</b> or <b>JS</b> to look thing beautiful and convert the image into small fun applications
+				</div>
+				<div class="plink">
+					<a href="https://github.com/TSAR10/PureCssImages">
+						<img src="git.svg">
+						Git link
+					</a>
+				</div>
+			</div>
+			<div class="slides">
+				<div class="ptitle">
+					CamColor
+				</div>
+				<div class="pabout">
+					Simple app that will fetch the pic from the camera and display the <b>rgb()</b> value wherever you touch.<br>
+					<i> Simply you have to click the pic using this app and after that touch in the spot you want to get <b>rgb()</b> value.</i>
+				</div>
+				<div class="plink">
+					<a href="https://github.com/TSAR10/camcolor">
+						<img src="git.svg">
+						Git link
+					</a>
+				</div>
+			</div>
+			<div class="slides">
+				<div class="ptitle">
+					DEVNA
+				</div>
+				<div class="pabout">
+					Web Application to get Service or give service like<b> AMAZON of services</b> where you can choose from the ton of services and providers
+					<br>
+					<i><b>This is my dream project still in progress</b></i>
+				</div>
+				<div class="plink">
+					<a href="https://github.com/TSAR10/DEVNA">
+						<img src="git.svg">
+						Git link
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="labels">
+			<label for="slide1" class="nav"></label>
+			<label for="slide2" class="nav"></label>
+			<label for="slide3" class="nav"></label>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="top_flr">
+			<div class="tech">
+				<div class="used">
+					Technology Used 
+				</div>
+				<div class="icons">
+					<img src="html.svg">
+					<img src="css.svg">
+					<img src="javascript.svg">
+					<img src="git.svg">
+				</div>
+			</div>
+			<div class="options">
+				<div>
+					<a href="">Contact Me</a>
+					<a href="">Photo Gallery</a>
+				</div>
+			</div>
+		</div>
+		<div class="credits">
+			<div>
+				Made with &#x2764; By Tushar Sureka
 			</div>
 		</div>
 	</section>
