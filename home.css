@@ -501,9 +501,6 @@ input[type=radio]{
 		justify-content: space-around;
 		align-items: baseline;
 	}
-	.head{
-		background-color: midnightblue;
-	}
 	.menubar ul li:nth-child(1){
 		display: block;
 	}
